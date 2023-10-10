@@ -18,7 +18,13 @@
   background-color: black;
   color: white;
   border: none;
+  height: 33px;
+  width: 98px;
+  font-size: 26px;
+  font-weight: bold;
+  font-family: 'Outfit', sans-serif;
 }
+
 
 .main-container {
   background-color: black;
@@ -72,5 +78,7 @@
   font-weight: 700;
   background-color: #B5A100;
   color: black;
-  border-radius: 12px;
+  border-radius: 15px;
+  height: 51px;
+  width: 205px;
 }
