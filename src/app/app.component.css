@@ -1,0 +1,76 @@
+/* app.component.css */
+
+.toolbar {
+  background-color: black;
+  height: 124px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.logo {
+  width: 173px;
+  height: 33px;
+}
+
+.contact-button {
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+.main-container {
+  background-color: black;
+  background-image: linear-gradient(to top, rgba(181, 161, 0, 0.25), transparent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 124px);
+}
+
+.content-container {
+  display: flex;
+  padding: 0 40px;
+}
+
+.main-image {
+  width: 279px;
+  height: 418px;
+}
+
+.text-container {
+  color: white;
+  margin-top: 20px;
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+.title .part-one {
+  font-family: 'Outfit', sans-serif;
+  font-size: 44px;
+  font-weight: 100;
+}
+
+.title .part-two {
+  font-family: 'Niconne', cursive;
+  font-size: 73px;
+}
+
+.description {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.kickstarter-button {
+  font-family: 'Outfit', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  background-color: #B5A100;
+  color: black;
+  border-radius: 12px;
+}
