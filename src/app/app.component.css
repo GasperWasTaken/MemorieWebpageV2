@@ -14,6 +14,9 @@
   height: 33px;
 }
 
+/*
+  TODO: Add black border around it
+*/
 .contact-button {
   background-color: black;
   color: white;
