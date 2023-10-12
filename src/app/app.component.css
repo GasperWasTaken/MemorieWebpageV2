@@ -23,6 +23,8 @@
   font-size: 26px;
   font-weight: bold;
   font-family: 'Outfit', sans-serif;
+  outline: none;
+  box-shadow: none;
 }
 
 
@@ -37,8 +39,10 @@
 
 .content-container {
   display: flex;
-  padding: 0 40px;
+  padding-left: 20%;
+  padding-right: 10%;
 }
+
 
 .main-image {
   width: 279px;
@@ -48,11 +52,15 @@
 .text-container {
   color: white;
   margin-top: 20px;
+  padding-left: 7%;
 }
 
+
 .title {
-  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
 }
+
 
 .title .part-one {
   font-family: 'Outfit', sans-serif;
@@ -63,6 +71,7 @@
 .title .part-two {
   font-family: 'Niconne', cursive;
   font-size: 73px;
+  margin-top: -25px;
 }
 
 .description {
@@ -81,4 +90,34 @@
   border-radius: 15px;
   height: 51px;
   width: 205px;
+}
+
+@media screen and (max-width: 1080px) {
+  .content-container {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .main-image {
+    margin-bottom: 20px;
+  }
+
+  .text-container {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 375px) {
+    .main-image {
+      width: 130px; /* Adjust as needed */
+      height: 200px; /* Adjust as needed */
+    }
+
+  }
+
+  .main-container {
+    min-height: 130vh; /* Ensures the gradient covers the entire view height */
+  }
 }
