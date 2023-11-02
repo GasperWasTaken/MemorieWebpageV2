@@ -114,13 +114,64 @@
 
   @media screen and (max-width: 375px) {
     .main-image {
-      width: 130px; /* Adjust as needed */
-      height: 200px; /* Adjust as needed */
+      width: 130px;
+      height: 200px;
     }
 
   }
 
   .main-container {
-    min-height: 130vh; /* Ensures the gradient covers the entire view height */
+    min-height: 130vh;
+  }
+}
+
+@media screen and (max-width: 320px) { /* iPhone 5/SE has a width of 320px */
+  .toolbar {
+    height: 10vh; /* Reduce the height of the toolbar */
+    padding: 0 10px; /* Reduce padding for smaller screens */
+  }
+
+  .logo {
+    width: auto; /* Adjust width automatically */
+    height: 20px; /* Reduce the height to match the Contact button */
+    margin-left: 5px; /* Adjust margin-left for smaller screens */
+  }
+
+  .contact-button {
+    height: auto; /* Match the height with the logo */
+    width: auto; /* Adjust width automatically */
+    font-size: 18px; /* Reduce font size */
+    padding: 5px 8px; /* Adjust padding */
+  }
+
+  .title .part-one {
+    font-size: 24px; /* Reduce font size for "Create your" */
+  }
+
+  .title .part-two {
+    font-size: 34px; /* Reduce font size for "memorie." */
+    margin-top: -15px; /* Adjust margin-top */
+  }
+
+  .description {
+    font-size: 14px; /* Reduce font size for description */
+  }
+
+  .kickstarter-button {
+    font-size: 13px; /* Reduce font size for the button */
+    height: 40px; /* Adjust height */
+    width: auto; /* Adjust width automatically */
+    padding: 10px 15px; /* Adjust padding */
+  }
+
+  /* Adjust the main image size for smaller screens */
+  .main-image {
+    height: auto; /* Adjust height */
+    margin-bottom: 0px;
+  }
+
+  /* Adjust the main container to have a smaller min-height */
+  .main-container {
+    min-height: 100vh; /* Adjust min-height */
   }
 }
