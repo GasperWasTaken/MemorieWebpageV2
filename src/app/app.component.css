@@ -14,9 +14,7 @@
   height: 33px;
 }
 
-/*
-  TODO: Add black border around it
-*/
+
 .contact-button {
   background-color: black;
   color: white;
@@ -103,6 +101,10 @@
     padding-right: 0;
   }
 
+  .description {
+    padding: 0 5%;
+  }
+
   .main-image {
     margin-bottom: 20px;
   }
@@ -125,53 +127,58 @@
   }
 }
 
-@media screen and (max-width: 320px) { /* iPhone 5/SE has a width of 320px */
+/* iPhone 5/SE */
+@media screen and (max-width: 375px) {
   .toolbar {
-    height: 10vh; /* Reduce the height of the toolbar */
-    padding: 0 10px; /* Reduce padding for smaller screens */
+    height: 10vh;
+    padding: 0 10px;
   }
 
   .logo {
-    width: auto; /* Adjust width automatically */
-    height: 20px; /* Reduce the height to match the Contact button */
-    margin-left: 5px; /* Adjust margin-left for smaller screens */
+    width: auto;
+    height: 20px;
+    margin-left: 5px;
   }
 
   .contact-button {
-    height: auto; /* Match the height with the logo */
-    width: auto; /* Adjust width automatically */
-    font-size: 18px; /* Reduce font size */
-    padding: 5px 8px; /* Adjust padding */
+    height: auto;
+    width: auto;
+    font-size: 18px;
+    padding: 5px 8px;
   }
 
   .title .part-one {
-    font-size: 24px; /* Reduce font size for "Create your" */
+    font-size: 30px;
   }
 
   .title .part-two {
-    font-size: 34px; /* Reduce font size for "memorie." */
-    margin-top: -15px; /* Adjust margin-top */
+    font-size: 50px;
+    margin-top: -15px;
   }
 
   .description {
-    font-size: 14px; /* Reduce font size for description */
+    font-size: 14px;
+    padding: 0 5%;
+    margin-bottom: 20px;
+
   }
 
   .kickstarter-button {
-    font-size: 13px; /* Reduce font size for the button */
-    height: 40px; /* Adjust height */
-    width: auto; /* Adjust width automatically */
-    padding: 10px 15px; /* Adjust padding */
+    font-size: 13px;
+    height: 40px;
+    width: auto;
+    padding: 10px 15px;
   }
 
-  /* Adjust the main image size for smaller screens */
+
   .main-image {
-    height: auto; /* Adjust height */
+    height: auto;
+    width: 120px;
     margin-bottom: 0px;
   }
 
-  /* Adjust the main container to have a smaller min-height */
+
   .main-container {
-    min-height: 100vh; /* Adjust min-height */
+    min-height: 100vh;
   }
 }
