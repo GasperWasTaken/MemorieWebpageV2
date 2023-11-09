@@ -1,5 +1,13 @@
 /* app.component.css */
 
+.root-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+
 .toolbar {
   background-color: black;
   height: 124px;
@@ -7,6 +15,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
+  flex-shrink: 0;
 }
 
 .logo {
@@ -35,7 +44,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: calc(100vh - 124px);
+  flex-grow: 1;
+  overflow-y: auto;
 }
 
 .content-container {
@@ -48,6 +58,7 @@
 .main-image {
   width: 279px;
   height: 418px;
+  object-fit: contain;
 }
 
 .text-container {
@@ -94,6 +105,16 @@
 }
 
 @media screen and (max-width: 1080px) {
+
+  @media screen and (max-height: 680px) {
+
+    .main-image {
+      height: auto;
+      width: 250px;
+      margin-bottom: 0px;
+    }
+
+  }
   .content-container {
     flex-direction: column;
     align-items: center;
