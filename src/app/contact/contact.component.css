@@ -1,0 +1,59 @@
+/* This is a starting point based on the image provided and your current styles.
+You may need to adjust colors, fonts, and sizes to match your design precisely. */
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Outfit', sans-serif;
+  background-color: black;
+  color: white;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+}
+
+.contact-header {
+  text-align: center;
+}
+
+.contact-info p {
+  margin: 5px 0;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background-color: #222;
+  border: 1px solid #444;
+  color: white;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.contact-form button {
+  background-color: #B5A100;
+  color: black;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.checkbox-container label {
+  margin-left: 5px;
+}

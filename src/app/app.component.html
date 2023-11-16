@@ -1,32 +1,9 @@
+<!-- app.component.html -->
 <div class="root-container">
   <div class="toolbar">
-    <img src="assets/qrPlate/Memorie_Logo.svg" alt="Logo" class="logo" height="418" width="279">
-    <button (click)="scrollToContact()" class="contact-button">Contact</button>
+    <img routerLink="/" src="assets/qrPlate/Memorie_Logo.svg" alt="Logo" class="logo">
+    <button routerLink="/contact" class="contact-button">Contact</button>
   </div>
 
-  <div class="main-container">
-    <div class="content-container">
-      <img src="assets/qrPlate/PLATE.svg" alt="QR Plate" class="main-image">
-      <div class="text-container">
-        <div class="title">
-          <span class="part-one">Create your</span>
-          <span class="part-two">memorie.</span>
-        </div>
-        <p class="description">
-          A Physical Link to Digital Remembrance. Our unique QR codes, embedded into a durable metal plate, offer a
-          tangible connection to your digital memories. Scan to unlock a world of cherished photos, stories, and
-          thoughts,
-          creating a lasting tribute that withstands time. With Memorie QR Codes, we bridge the gap between the physical
-          and digital, ensuring your loved one's legacy is always within reach.
-        </p>
-        <button class="kickstarter-button">See us on Kickstarter</button>
-      </div>
-    </div>
-  </div>
-
-  <div id="contact-section" class="contact-placeholder">
-    <!-- Contact form will go here :) -->
-  </div>
-
-
+  <router-outlet></router-outlet>
 </div>
