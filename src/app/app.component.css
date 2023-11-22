@@ -205,96 +205,156 @@
   }
 }
 
-.contact-container {
+/* Contact Section Styles */
+.contact-placeholder {
   display: flex;
-  justify-content: space-between;
-  background-color: #000;
-  color: #fff;
-  font-family: 'Outfit', sans-serif;
-  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #000; /* Black background */
+  color: white;
+  min-height: 100vh;
 }
 
+.contact-container {
+  display: flex;
+  flex-direction: row-reverse; /* This will switch the order of the flex items */
+  align-items: center; /* This will vertically center the flex items */
+  justify-content: space-around; /* This will maintain the spacing on either side */
+  height: 100vh; /* This ensures the container fills the height of the viewport */
+  padding: 0 10%; /* This adds some padding on the left and right */
+  box-sizing: border-box; /* This ensures padding is included in the height */
+}
+
+/* Contact Info */
 .contact-info {
-  width: 50%;
+  flex-basis: 50%; /* Assigns 50% of the space to the contact-info */
+  text-align: right; /* Aligns the text to the right */
 }
 
 .contact-title {
   font-family: 'Niconne', cursive;
   font-size: 73px;
-  font-weight: bold;
+  font-weight: 700;
+  margin-bottom: 30px; /* Space below the title */
 }
 
-.contact-details .contact-subtitle {
+.contact-subtitle {
+  font-family: 'Outfit', sans-serif;
   font-size: 23px;
   font-weight: 300;
+  margin-bottom: 10px; /* Space between subtitle and text */
 }
 
-.contact-details .contact-text {
+.contact-text {
+  font-family: 'Outfit', sans-serif;
   font-size: 18px;
   font-weight: 300;
-  margin-bottom: 20px;
+  margin-bottom: 10px; /* Space between each text */
+}
+
+/* Contact Form */
+.contact-form {
+  flex-basis: 50%; /* Assigns 50% of the space to the contact-form */
+  text-align: left; /* Aligns the form elements to the left */
 }
 
 .contact-form form {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  justify-content: center; /* This will help keep the form vertically centered */
+  height: 100%; /* Full height to aid with centering */
 }
 
-.contact-form input,
-.contact-form textarea {
-  font-family: 'Outfit', sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 20px;
-  padding: 10px;
-  background: none;
-  color: white;
+.contact-form input:first-child,
+.contact-form textarea:first-child {
+  margin-top: 0; /* Removes top margin from the first input/textarea */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%; /* Full width of the form section */
+  background: transparent;
   border: 1px solid white;
+  margin-bottom: 20px;
+  padding: 12px;
+  color: white;
+  font-family: 'Outfit', sans-serif;
 }
 
-.contact-form .checkbox-container {
+input::placeholder,
+textarea::placeholder {
+  color: #ccc; /* Lighter placeholder text */
+  font-family: 'Outfit', sans-serif;
+}
+
+/* Checkboxes and Submit Button */
+.checkbox-container {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
 }
 
-.contact-form .checkbox-container label {
-  margin-left: 10px;
-  font-size: 18px;
-  font-weight: bold;
+.checkbox-container input[type="checkbox"] {
+  margin-right: 10px;
 }
 
 .submit-button {
-  font-family: 'Outfit', sans-serif;
-  font-weight: bold;
-  padding: 10px 20px;
-  background: #fff;
-  color: #000;
+  background-color: white;
+  color: black;
   border: none;
+  padding: 12px 24px;
   cursor: pointer;
+  font-weight: bold;
+  font-family: 'Outfit', sans-serif;
+  transition: background-color 0.3s ease;
 }
 
 .submit-button:hover {
-  background: #ddd;
+  background-color: #f5f5f5; /* Light grey on hover */
 }
 
+/* Copyright Section */
+.contact-placeholder .copyright {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 300;
+  font-family: 'Outfit', sans-serif;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  color: white;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
   .contact-container {
     flex-direction: column;
+    align-items: center;
   }
 
   .contact-info,
-  .contact-form form {
-    width: 100%;
+  .contact-form {
+    flex-basis: 100%;
+  }
+
+  .contact-form {
+    order: 1; /* Contact form goes first on smaller screens */
+  }
+
+  .contact-info {
+    order: 2; /* Contact info goes second on smaller screens */
   }
 }
 
-/* Update this as per your existing copyright style */
-copyright {
-  font-size: 12px;
-  text-align: center;
-  padding: 20px 0;
-  font-weight: 100;
-  color: white;
+/* More responsive adjustments as needed */
+@media (max-width: 480px) {
+  .contact-title {
+    font-size: 58px; /* Smaller title on very small screens */
+  }
+
+  .contact-subtitle,
+  .contact-text {
+    font-size: 20px; /* Smaller subtitle and text on very small screens */
+  }
 }
