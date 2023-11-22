@@ -20,7 +20,7 @@ body, html {
 
 .toolbar {
   background-color: black;
-  height: 10vh;
+  height: 124px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -49,7 +49,7 @@ body, html {
 
 
 .main-container {
-  height: 90vh;
+  height: calc(100vh - 124px);
   background-color: black;
   background-image: linear-gradient(to top, rgba(181, 161, 0, 0.25), transparent);
   display: flex;
@@ -258,7 +258,7 @@ body, html {
 .contact-subtitle {
   font-family: 'Outfit', sans-serif;
   font-size: 23px;
-  font-weight: 300;
+  font-weight: 700;
   margin-bottom: 10px; /* Space between subtitle and text */
 }
 
@@ -272,7 +272,8 @@ body, html {
 /* Contact Form */
 .contact-form {
   flex-basis: 50%; /* Assigns 50% of the space to the contact-form */
-  text-align: left; /* Aligns the form elements to the left */
+  text-align: left;
+  border-top: none;
 }
 
 .contact-form form {
@@ -290,9 +291,10 @@ body, html {
 input[type="text"],
 input[type="email"],
 textarea {
-  width: 100%; /* Full width of the form section */
+  width: 100%;
   background: transparent;
-  border: 1px solid white;
+  border: 1px none white;
+  border-bottom-style: solid;
   margin-bottom: 20px;
   padding: 12px;
   color: white;
