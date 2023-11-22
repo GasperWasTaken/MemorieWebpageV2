@@ -10,7 +10,7 @@
 
 .toolbar {
   background-color: black;
-  height: 124px;
+  height: 10vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -39,6 +39,7 @@
 
 
 .main-container {
+  height: 90vh;
   background-color: black;
   background-image: linear-gradient(to top, rgba(181, 161, 0, 0.25), transparent);
   display: flex;
@@ -144,7 +145,7 @@
   }
 
   .main-container {
-    min-height: 130vh;
+    min-height: 90vh;
   }
 }
 
@@ -202,4 +203,98 @@
   .main-container {
     min-height: 100vh;
   }
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #000;
+  color: #fff;
+  font-family: 'Outfit', sans-serif;
+  height: 100vh;
+}
+
+.contact-info {
+  width: 50%;
+}
+
+.contact-title {
+  font-family: 'Niconne', cursive;
+  font-size: 73px;
+  font-weight: bold;
+}
+
+.contact-details .contact-subtitle {
+  font-size: 23px;
+  font-weight: 300;
+}
+
+.contact-details .contact-text {
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.contact-form input,
+.contact-form textarea {
+  font-family: 'Outfit', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding: 10px;
+  background: none;
+  color: white;
+  border: 1px solid white;
+}
+
+.contact-form .checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.contact-form .checkbox-container label {
+  margin-left: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.submit-button {
+  font-family: 'Outfit', sans-serif;
+  font-weight: bold;
+  padding: 10px 20px;
+  background: #fff;
+  color: #000;
+  border: none;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background: #ddd;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-info,
+  .contact-form form {
+    width: 100%;
+  }
+}
+
+/* Update this as per your existing copyright style */
+copyright {
+  font-size: 12px;
+  text-align: center;
+  padding: 20px 0;
+  font-weight: 100;
+  color: white;
 }
