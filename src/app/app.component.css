@@ -1,5 +1,15 @@
 /* app.component.css */
 
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Outfit', sans-serif;
+}
+
 .root-container {
   display: flex;
   flex-direction: column;
@@ -211,31 +221,38 @@
   justify-content: center;
   align-items: center;
   background-color: #000; /* Black background */
-  color: white;
+  background-image: linear-gradient(to bottom, rgba(181, 161, 0, 0.25), transparent);
   min-height: 100vh;
+  padding: 0;
+  color: white;
 }
 
 .contact-container {
   display: flex;
-  flex-direction: row-reverse; /* This will switch the order of the flex items */
-  align-items: center; /* This will vertically center the flex items */
-  justify-content: space-around; /* This will maintain the spacing on either side */
-  height: 100vh; /* This ensures the container fills the height of the viewport */
-  padding: 0 10%; /* This adds some padding on the left and right */
-  box-sizing: border-box; /* This ensures padding is included in the height */
+  flex-direction: row-reverse; /* Switch positions */
+  align-items: center;
+  justify-content: space-around;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 10%;
 }
 
 /* Contact Info */
 .contact-info {
-  flex-basis: 50%; /* Assigns 50% of the space to the contact-info */
-  text-align: right; /* Aligns the text to the right */
+  flex: 1;
+  text-align: right;
 }
 
 .contact-title {
   font-family: 'Niconne', cursive;
   font-size: 73px;
-  font-weight: 700;
-  margin-bottom: 30px; /* Space below the title */
+  margin-top: -25px;
+}
+
+.contact-title .bold {
+  font-family: 'Outfit', sans-serif;
+  font-size: 44px;
+  font-weight: 100;
 }
 
 .contact-subtitle {
