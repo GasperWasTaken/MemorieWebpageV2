@@ -41,24 +41,29 @@
       </div>
       <div class="contact-form">
         <form>
-          <div class="form-group">
+          <div class="form-row">
             <input type="text" id="first-name" name="first-name" placeholder="First Name" required>
             <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
           </div>
-          <div class="form-group">
+          <div class="form-row">
             <input type="email" id="email" name="email" placeholder="Email" required>
           </div>
-          <div class="form-group">
+          <div class="form-row">
             <textarea id="message" name="message" placeholder="Message" required></textarea>
           </div>
-          <div class="checkbox-container">
-            <input type="checkbox" id="privacy-policy" name="privacy-policy" required>
-            <label for="privacy-policy">I agree with the privacy and data protection policy.</label>
+          <div class="form-row policy-submit-row">
+            <div class="checkbox-container">
+              <input type="checkbox" id="privacy-policy" name="privacy-policy" required>
+              <label for="privacy-policy">I agree with the privacy and data protection policy.</label>
+            </div>
+            <button type="submit" class="submit-button">Submit</button>
           </div>
-          <button type="submit" class="submit-button">Submit</button>
         </form>
+
       </div>
     </div>
-
+    <div class="copyright">
+      © 2023 Memorie d.o.o.
+    </div>
   </div>
 </div>

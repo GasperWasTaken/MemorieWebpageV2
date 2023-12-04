@@ -108,11 +108,12 @@ body, html {
   font-family: 'Outfit', sans-serif;
   font-size: 15px;
   font-weight: 700;
-  background-color: #B5A100;
+  background-color: #ffffff;
   color: black;
   border-radius: 15px;
   height: 51px;
   width: 205px;
+  border-style: none;
 }
 
 @media screen and (max-width: 1080px) {
@@ -218,6 +219,7 @@ body, html {
 /* Contact Section Styles */
 .contact-placeholder {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #000; /* Black background */
@@ -229,12 +231,18 @@ body, html {
 
 .contact-container {
   display: flex;
-  flex-direction: row-reverse; /* Switch positions */
+  flex-direction: row-reverse;
   align-items: center;
   justify-content: space-around;
   max-width: 1200px;
   width: 100%;
-  padding: 0 10%;
+  padding: 0 10% 50px;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 /* Contact Info */
@@ -274,6 +282,8 @@ body, html {
   flex-basis: 50%; /* Assigns 50% of the space to the contact-form */
   text-align: left;
   border-top: none;
+  font-family: 'Outfit', sans-serif;
+
 }
 
 .contact-form form {
@@ -288,6 +298,21 @@ body, html {
   margin-top: 0; /* Removes top margin from the first input/textarea */
 }
 
+.contact-form input[type="text"] {
+  width: calc(50% - 10px); /* Adjust the 10px if you want a different gap */
+}
+
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+}
+
+.policy-submit-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 input[type="text"],
 input[type="email"],
 textarea {
@@ -298,20 +323,20 @@ textarea {
   margin-bottom: 20px;
   padding: 12px;
   color: white;
-  font-family: 'Outfit', sans-serif;
+  /*font-family: 'Outfit', sans-serif;*/
 }
 
 input::placeholder,
 textarea::placeholder {
-  color: #ccc; /* Lighter placeholder text */
+  color: #ccc;
   font-family: 'Outfit', sans-serif;
+  font-size: 18px;
 }
 
 /* Checkboxes and Submit Button */
 .checkbox-container {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
 }
 
 .checkbox-container input[type="checkbox"] {
@@ -319,14 +344,15 @@ textarea::placeholder {
 }
 
 .submit-button {
+  padding: 12px 24px;
+  margin-left: 10px;
   background-color: white;
   color: black;
   border: none;
-  padding: 12px 24px;
-  cursor: pointer;
-  font-weight: bold;
-  font-family: 'Outfit', sans-serif;
+  cursor: pointer;font-family: 'Outfit', sans-serif;
   transition: background-color 0.3s ease;
+  border-radius: 12px;
+  font-weight: bold;
 }
 
 .submit-button:hover {
@@ -335,14 +361,13 @@ textarea::placeholder {
 
 /* Copyright Section */
 .contact-placeholder .copyright {
-  text-align: center;
+  text-align: left; /* Align the text to the left */
+  padding-left: 10px; /* Provide padding from the left side */
+  padding-bottom: 10px; /* Provide padding from the bottom side */
   font-size: 12px;
-  font-weight: 300;
-  font-family: 'Outfit', sans-serif;
-  position: absolute;
-  bottom: 10px;
-  width: 100%;
   color: white;
+  font-family: 'Outfit', sans-serif;
+  order: 2;
 }
 
 /* Responsive Design */
