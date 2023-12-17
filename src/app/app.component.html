@@ -40,11 +40,11 @@
         <p class="contact-text">Ljubljana, Slovenia</p>
       </div>
       <div class="contact-form">
-        <form name="contact" netlify>
+        <form name="contact" method="post" netlify>
           <input type="hidden" name="form-name" value="contact" />
           <div class="form-row">
-            <input type="text" id="first-name" name="first-name" placeholder="First Name" required>
-            <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
+            <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+            <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
           </div>
           <div class="form-row">
             <input type="email" id="email" name="email" placeholder="Email" required>
@@ -54,13 +54,12 @@
           </div>
           <div class="form-row policy-submit-row">
             <div class="checkbox-container">
-              <input type="checkbox" id="privacy-policy" name="privacy-policy" required>
-              <label for="privacy-policy">I agree with the privacy and data protection policy.</label>
+              <input type="checkbox" id="privacyPolicy" name="privacyPolicy" required>
+              <label for="privacyPolicy">I agree with the privacy and data protection policy.</label>
             </div>
             <button type="submit" class="submit-button">Submit</button>
           </div>
         </form>
-
       </div>
     </div>
     <div class="copyright">
