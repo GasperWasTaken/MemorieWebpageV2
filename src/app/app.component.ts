@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'MemorieWebpageV2';
+  title = 'Memorie';
   scrollToContact() {
     const contactSection = document.getElementById('contact-section');
     contactSection?.scrollIntoView({ behavior: 'smooth' });
