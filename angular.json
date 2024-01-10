@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "MemorieWebpageV2": {
+    "memoriewebpagev2": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "MemorieWebpageV2:build:production"
+              "buildTarget": "memoriewebpagev2:build:production"
             },
             "development": {
-              "buildTarget": "MemorieWebpageV2:build:development"
+              "buildTarget": "memoriewebpagev2:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "MemorieWebpageV2:build"
+            "buildTarget": "memoriewebpagev2:build"
           }
         },
         "test": {

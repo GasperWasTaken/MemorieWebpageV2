@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'MemorieWebpageV2'`, () => {
+  it(`should have as title 'memoriewebpagev2'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('MemorieWebpageV2');
+    expect(app.title).toEqual('memoriewebpagev2');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('MemorieWebpageV2 app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('memoriewebpagev2 app is running!');
   });
 });
