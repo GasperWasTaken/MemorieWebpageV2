@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "MemorieWebpageV2:build:production"
+              "buildTarget": "MemorieWebpageV2:build:production"
             },
             "development": {
-              "browserTarget": "MemorieWebpageV2:build:development"
+              "buildTarget": "MemorieWebpageV2:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "MemorieWebpageV2:build"
+            "buildTarget": "MemorieWebpageV2:build"
           }
         },
         "test": {
