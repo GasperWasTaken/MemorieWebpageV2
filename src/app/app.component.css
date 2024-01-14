@@ -385,6 +385,13 @@ textarea::placeholder {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .main-image {
+    display: none;
+  }
+}
+
+
 
 @media (max-width: 480px) {
   .contact-title {
