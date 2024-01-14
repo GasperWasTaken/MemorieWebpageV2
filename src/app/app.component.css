@@ -416,6 +416,11 @@ textarea::placeholder {
   align-items: center;
   background-image: linear-gradient(to top, rgba(181, 161, 0, 0.25), transparent);
   min-height: 100vh;
+
+  .copyright {
+    font-family: 'Outfit', sans-serif;
+    font-size: 12px;
+  }
 }
 
 .waitlist-container {
